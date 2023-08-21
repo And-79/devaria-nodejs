@@ -7,11 +7,11 @@ console.log('Esse programa vai checar se voce e maior de 18 anose tem habilidade
 console.log('Alem das suas verifcacoes, precisamos verificar se voce esta na lista de presença do horario')
 
 readline.question('Qual o ano do seu nascimento?' , ano => {
-    if(ano > 20224) {
+    if(ano > 2005) {
         console.log("Voce nao tem 18 anos ");
     }else{
-        readline.question("Voce tem habilitaçao? {Sim/Nao}", tem habilitacao => {
-            if(!(temHabilitacao.toUpperCase() === "Sim")){
+        readline.question("Voce tem habilitaçao? {Sim/Nao}", temHabilitacao => {
+            if(!(temHabilitacao.toUpperCase() === "SIM")){
                 console.log('Voce nao tem habilitacao para entrar o Kart');
             }else{
                 readline.question("Qual seu nome?", nome =>{
@@ -22,7 +22,7 @@ readline.question('Qual o ano do seu nascimento?' , ano => {
                         case  'Rafael' :
                             console.log('Ben vindo ao Kart Rafael');
                             break;
-                        default;
+                        default:
                             console.log('Seu nome nao foi identificado na lista de presença');         
                     }
                 });
