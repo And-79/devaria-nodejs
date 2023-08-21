@@ -1,4 +1,4 @@
-const readLine = require("readline").createinterface({
+const readLine = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout
 });
@@ -9,5 +9,5 @@ console.log(minhaPrimeiraConstanteString);
 let leituraDeCampo;
 readLine.question("Informe sua idade: ",input => {
     leituraDeCampo = input;
-    console.log("o usuario digitou: $ {leitura de campo}");
+    console.log(`o usuario digitou: ${leituraDeCampo}`);
 }); 
